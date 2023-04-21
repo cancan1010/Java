@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class NotOrtalama {
+    public static void main(String[] args) {
+        
+        int mat,fizik,kimya,turkce,tarih,muzik;
+        Scanner imp= new Scanner(System.in);
+
+        System.out.print("Matematik Notunuz : ");
+        mat = imp.nextInt();
+
+        System.out.print("Fizik Notunuz : ");
+        fizik = imp.nextInt();
+
+        System.out.print("Türkçe Notunuz : ");
+        turkce = imp.nextInt();
+
+        System.out.print("Tarih Notunuz : ");
+        tarih = imp.nextInt();
+
+        System.out.print("Müzik Notunuz : ");
+        muzik = imp.nextInt();
+
+        int toplam = (mat+fizik+turkce+tarih+muzik);
+        double ort = toplam / 6.0;
+
+        System.out.println("Ortalamanız : "+ort);
+
+        String sonuc = (ort > 60) ? "Sınıfı Geçti" : "Sınıfta Kaldı";
+
+        System.out.println("Sonuç : "+sonuc);
+    }
+}
